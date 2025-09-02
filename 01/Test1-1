@@ -1,0 +1,12 @@
+<! DOCTYPE html> # html 기본 구조
+<html lang="ko">
+    <head>
+        <meta charset="="UTF-8">
+        <meta name="viewport" content="=width=dev1">
+        <title>HTML기초</title>
+    </head>
+    <body>
+        <!--HTML주석-->
+        HTML 페이지 구성
+    </body>
+</html>
