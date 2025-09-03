@@ -1,0 +1,59 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: rgb(27, 202, 230);
+}
+header, main, footer{
+    width: 80%;
+    margin-left: 10px;
+    padding: 20px;
+    background-color: rgb(238, 229, 229);
+    display: flex;
+    flex-direction: column;
+}
+article {
+    width: 80%;
+    padding: 20px;
+    background-color: rgb(0, 0, 13);
+}
+section.s1 {
+    width : 500px;
+    border: 5px;
+    padding: 15px;
+    margin: 15px;
+    
+}
+section.s2 {
+    width : 500px;
+    border: 5px;
+    padding: 15px;
+    margin: 15px;
+    box-sizing: border-box;
+ul {
+    list-style-type: none;
+}
+
+
+a {
+    display:inline-block;
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+
+    text-decoration:none; /* 밑줄없앰*/
+    color: white;
+    background-color: aqua;
+    padding: 5px;
+    border-radius: 5px;
+ 
+}
+a:hover {
+    background-color: brown;
+}
+span{
+    font-weight: bold;
+    display: inline-block;
+}
