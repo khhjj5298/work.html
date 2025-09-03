@@ -1,6 +1,20 @@
 * {
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
+}
+.link-box {
+  border: 2px solid #000; /* 테두리 */
+  padding: 15px;           /* 안쪽 여백 */
+  background-color: #f9f9f9; /* 배경색 */
+  border-radius: 10px;     /* 모서리 둥글게 */
+  width: fit-content;      /* 내용물 크기만큼 */
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1); /* 그림자 */
+}
+
+.icon-container {
+  display: flex;               /* 가로 정렬을 위한 flexbox */
+  gap: 10px;                  /* 아이콘 박스 간 간격 */
+  justify-content: center;    /* 컨테이너 안에서 가운데 정렬 */
 }
 
 body {
@@ -9,42 +23,46 @@ body {
 
 header, main, footer {
     width: 80%;
-    margin-left: 10px;
+    margin-left: 10%;
     padding: 20px;
     background-color: rgb(238, 229, 229);
     display: flex;
     flex-direction: column;
-    flex-wrap : wrap;
+    flex-wrap:wrap;
+}
+
+img {
+  border-radius: 50%;
+  width: 150px
+  height: 150px;
+  object-fit: cover:
+  
 }
 
 article {
     width: 80%;
     padding: 20px;
     background-color: rgb(242, 242, 248);
+    text-align: center;
 }
 
-section.s1 {
-    width: 500px;
+section {
+    width: 80%;
     border: 5px;
     padding: 15px;
     margin: 15px;
+    background-color: rgb(249, 245, 215);
 
 }
 
-article {
+article>p {
     font-family: "Nanum Brush Script", cursive;
     font-weight: 400px;
     font-size: 20px;
+    
 }
 
-section.s2 {
-    width: 500px;
-    border: 5px;
-    padding: 15px;
-    margin: 15px;
-    box-sizing: border-box;
-
-    ul {
+section.s1 ul {
         list-style-type: none;
         display: flex;
         flex-direction: row;
@@ -54,9 +72,10 @@ section.s2 {
         width: 100%;
         height: 150px;
         border: 1px solid;
-    }
+        }
+    
 
-    a {
+section.s2 a {
         display: inline-block;
         width: 100px;
         padding: 5px;
@@ -64,23 +83,26 @@ section.s2 {
         border-radius: 20px;
 
         text-decoration: none;
+        
         /* 밑줄없앰*/
         color: white;
-        background-color: aqua;
+        background-color: rgb(7, 44, 44);
         padding: 5px;
         border-radius: 5px;
 
     }
+.card {
+  display: flex;
+  align-items: center;  /* 이미지와 텍스트 세로 중앙정렬 */
+  gap: 20px;            /* 이미지와 텍스트 사이 간격 */
+}
 
-    a:hover {
-        background-color: brown;
-    }
-
-    span {
-        font-weight: bold;
-        display: inline-block;
-    }
-
+.card img.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;   /* 원형 이미지 */
+  object-fit: cover;    /* 이미지 비율 유지 */
+}
     @media (max-width : 1024px) {
 
         header,main,footer {
@@ -93,4 +115,3 @@ section.s2 {
         }
 
     }
-}
