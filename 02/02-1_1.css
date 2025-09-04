@@ -2,37 +2,54 @@
     margin: 0px;
     padding: 0px;
 }
-ul {
+header nav ul {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 15px;
   list-style-type: none;
   padding: 0;
   margin: 0;
   border: none;
+  justify-content: center;  /* 가운데 정렬 */
+  align-items: center;
 }
 
-ul li {
-  background: linear-gradient(135deg, #2196f3 60%, #1565c0 100%);
+header nav ul li {
+  background: linear-gradient(135deg, #2196f3 50%, #1565c0 100%);
   color: white;
-  border-radius: 12px;
+  border-radius: 10px;
   box-shadow: 2px 2px 8px rgba(33, 150, 243, 0.3);
   padding: 12px 18px;
   font-size: 18px;
   font-weight: 500;
   display: flex;
   align-items: center;
+  justify-content: center;
+  transition: transform 0.15s, box-shadow 0.15s ease;
 }
-
+header nav ul li:hover {
+  transform: translateY(-4px) scale(1.07);
+  box-shadow: 6px 6px 20px rgba(33, 150, 243, 0.35);
+}
 .icon-container {
   display: flex;  
-  flex-direction: column;             /* 가로 정렬을 위한 flexbox */
+  flex-direction: row;             /* 가로 정렬을 위한 flexbox */
   gap: 15px;                  /* 아이콘 박스 간 간격 */
   justify-content: flex-start; 
   align-items: flex-start;   /* 컨테이너 안에서 가운데 정렬 */
 }
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 22px;
+}
 
-body {
+header nav ul li i,
+header nav ul li .material-symbols-outlined {
+  font-size: 28px;
+  margin-right: 8px;
+body }
     background-color: rgb(27, 202, 230);
 }
 
@@ -45,18 +62,7 @@ header, main, footer {
     flex-direction: column;
     flex-wrap:wrap;
 }
-
-header > ul {
-  display: flex;
-  flex-direction: row;;
-  justify-content:flex-start;
-  align-items: flex-start;
-  width: 100%; 
-  border: 1px dotted rgb(235, 229, 229);
-}
-
-
-footer > ul {
+ul {
   display: flex;
   flex-direction: column;;
   justify-content:flex-start;
@@ -65,7 +71,9 @@ footer > ul {
   border: 1px dotted rgb(235, 229, 229);
 }
 
-
+li > i {
+  font-size: 25px;
+}
 img {
   border-radius: 50%;
   width: 150px;
@@ -121,8 +129,16 @@ section.s2 a {
         color: white;
         background-color: rgb(7, 44, 44);
         
+footer ul {
+  display: flex;
+  flex-direction: row;   /* 세로 정렬 */
+  gap: 18px;                /* 박스 사이 간격 */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
 
-    }
 
     @media (max-width : 1024px) {
 

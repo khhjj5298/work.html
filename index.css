@@ -1,0 +1,83 @@
+body {
+    /* 교수님파일 */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+}
+
+header, main, footer {
+    width: 800px;
+    background-color: white;
+
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+header {
+    background-color: rgb(54, 54, 79);
+    color: rgb(250, 251, 252);
+    text-align: center;
+    font-size: 30;
+    margin: 35px;
+}
+main {
+    min-height: 200px;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(54, 54, 79);
+   
+}
+ul {
+    list-style: none;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+footer > ul > li {
+    /* margin: 5px 20px 50px 80px; */
+    margin: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    /*color: black; */
+}
+
+footer a {
+    display: inline-flex;
+    width: 100px;
+    background-color: rgb(40, 2, 47);
+    border-radius: 10px;
+    padding: 30px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    
+}
+main  li {
+border-bottom:1px dotted;
+margin:10px;
+text-align: left;
+}
+
+main li:hover {
+    background-color: rgb(220, 232, 250);
+   
+}
+
+ footer :hover a {
+    background-color: rgb(243, 243, 243);
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(108, 107, 107, 0.2);
