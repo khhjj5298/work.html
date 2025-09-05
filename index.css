@@ -30,7 +30,7 @@ main {
     min-height: 200px;
     font-size: 25px;
     text-align: center;
-    color: rgb(54, 54, 79);
+    color: rgb(33, 33, 98);
    
 }
 ul {
@@ -57,11 +57,11 @@ a {
 footer a {
     display: inline-flex;
     width: 100px;
-    background-color: rgb(40, 2, 47);
+    background-color: rgb(3, 74, 61);
     border-radius: 10px;
     padding: 30px;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     
 }

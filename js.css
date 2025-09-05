@@ -14,10 +14,10 @@ button {
     border-radius: 5px;
     border: 0px; 
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
 }
 button:hover {
-    background-color: rgb(247, 247, 241);
+    background-color: rgb(251, 251, 111);
     color: rgb(21, 113, 193);
     cursor: pointer; 
 }
@@ -25,4 +25,18 @@ button:hover {
 .btDiv {
     margin: 20px;
     text-align: center;
+}
+#msg {
+    width: 80%;
+    height: 50px;
+    margin-top: 20px;
+    font-size: large;
+    text-align: center;
+    align-items: center;
+    justify-content: center;    
+    /* font-weight: bold; */
+    color: rgb(9, 3, 45); */
+}
+#msg.span {
+    font-weight: bold;
 }
